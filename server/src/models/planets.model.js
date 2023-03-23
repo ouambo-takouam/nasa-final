@@ -49,7 +49,7 @@ async function savePlanet(planet) {
 }
 
 async function getAllPlanets() {
-	return await Planet.find({});
+	return await Planet.find({}, '-_id -__v');
 }
 
 module.exports = {

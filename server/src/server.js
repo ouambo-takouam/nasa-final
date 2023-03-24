@@ -21,7 +21,7 @@ mongoose.connection.on('error', (error) => {
 });
 
 async function startServer() {
-	mongoose.connect(MONGO_URL);
+	await mongoose.connect(MONGO_URL);
 	await loadPlanetsData();
 
 	server.listen(PORT, () => {

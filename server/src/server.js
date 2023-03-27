@@ -1,9 +1,9 @@
 const http = require('http');
 const mongoose = require('mongoose');
 
-const app = require('./app');
-
 const { loadPlanetsData } = require('./models/planets.model');
+
+const app = require('./app');
 
 const PORT = process.env.PORT || 8000;
 
